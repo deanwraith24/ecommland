@@ -6,21 +6,23 @@
     <title>eCommerce Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">ShopNow</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="#">Sport Center</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
             </div>
@@ -28,11 +30,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero text-center text-white d-flex justify-content-center align-items-center" style="background-image: url(assets/images/hedge.png); height: 100vh;">
+    <header class="hero text-center text-white d-flex justify-content-center align-items-center">
         <div class="container">
-            <h1 class="display-4 fw-bold">Welcome to ShopNow</h1>
-            <p class="lead">Find the best products at unbeatable prices.</p>
-            <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+            <h1 class="display-4 fw-bold">Welcome to Sport Center</h1>
+            <p class="lead">Discover top-quality products at unbeatable prices.</p>
+            <a href="#products" class="btn btn-primary btn-lg bounce-animation">Shop Now</a>
         </div>
     </header>
 
@@ -41,49 +43,59 @@
         <h2 class="text-center mb-4">Featured Products</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card shadow-sm border-light">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 1">
+                <div class="card product-card shadow-sm border-light">
+                    <img src="assets/images/baseball.jpg" class="card-img-top" alt="Baseball set">
                     <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
+                        <h5 class="card-title">Baseball</h5>
                         <p class="card-text">$25.99</p>
-                        <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-outline-primary add-to-cart">Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card shadow-sm border-light">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 2">
+                <div class="card product-card shadow-sm border-light">
+                    <img src="assets/images/football.jpg" class="card-img-top" alt="Football Set">
                     <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
+                        <h5 class="card-title">Football</h5>
                         <p class="card-text">$30.99</p>
-                        <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-outline-primary add-to-cart">Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card shadow-sm border-light">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 3">
+                <div class="card product-card shadow-sm border-light">
+                    <img src="assets/images/hockey.jpg" class="card-img-top" alt="Hockey Set">
                     <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
+                        <h5 class="card-title">Hockey</h5>
                         <p class="card-text">$40.99</p>
-                        <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-outline-primary add-to-cart">Add to Cart</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Testimonials -->
+    <section id="testimonials" class="container py-5 text-center">
+        <h2 class="mb-4">What Our Customers Say</h2>
+        <blockquote class="blockquote">
+            <p>"Best shopping experience ever! Quality products and fast delivery!"</p>
+            <footer class="blockquote-footer">John Doe</footer>
+        </blockquote>
+        <blockquote class="blockquote">
+            <p>"Amazing deals and fantastic customer service. Highly recommend!"</p>
+            <footer class="blockquote-footer">Jane Smith</footer>
+        </blockquote>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 ShopNow, All rights reserved.</p>
-        <div>
-            <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
-        </div>
+        <p>&copy; 2025 Sport Center. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
