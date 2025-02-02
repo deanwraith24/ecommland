@@ -5,8 +5,8 @@
 }
 
 .hero h1, .hero p {
-    color: #BF5700; /* Burnt Orange */
-    text-shadow: 1px 1px 2px black; /* Thin Black Outline */
+    color: #BF5700;
+    text-shadow: 1px 1px 2px black;
 }
 
 /* Button Hover Animation */
